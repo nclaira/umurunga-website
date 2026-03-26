@@ -4,6 +4,11 @@
 import { HandHeart, Brain, Heart, Ban, Check, ArrowRight } from "lucide-react";
 import UmurungaLayout from "@/umurunga/components/UmurungaLayout";
 
+export const metadata = {
+  title: "Pillars"
+};
+
+
 const PillarsPage = () => {
   // Pillars data (easy to add/edit pillars here) 
   const pillars = [
@@ -100,7 +105,7 @@ const PillarsPage = () => {
           {/*  CTA Button  */}
           <div className="text-center">
             <a
-              href="/umurunga/activities"
+              href="/activities"
               className="inline-flex items-center gap-2 px-8 py-3 bg-[#0064A2] text-white rounded-full font-medium hover:bg-[#0064A2]/90 transition-colors"
             >
               See How We Implement These Pillars <ArrowRight className="h-4 w-4" />

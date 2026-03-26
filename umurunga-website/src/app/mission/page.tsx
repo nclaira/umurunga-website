@@ -5,6 +5,11 @@
 import { Target, CheckCircle, Lightbulb, Users, Heart, BookOpen } from "lucide-react";
 import UmurungaLayout from "@/umurunga/components/UmurungaLayout";
 
+export const metadata = {
+  title: "Our Mission"
+};
+
+
 const MissionPage = () => {
   //  What We Do list (easy to add more items) 
   const whatWeDo = [
@@ -75,7 +80,7 @@ const MissionPage = () => {
           {/* CTA Button  */}
           <div className="text-center mt-10">
             <a
-              href="/umurunga/activities"
+              href="/activities"
               className="inline-flex items-center gap-2 px-8 py-3 bg-[#0064A2] text-white rounded-full font-medium hover:bg-[#0064A2]/90 transition-colors"
             >
               See Our Activities →

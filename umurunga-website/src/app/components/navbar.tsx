@@ -12,14 +12,14 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "Mission", href: "#mission" },
-    { label: "Vision", href: "#vision" },
-    { label: "Pillars", href: "#pillars" },
-    { label: "Values", href: "#values" },
-    { label: "Team", href: "#team" },
-    { label: "Activities", href: "#activities" },
-    { label: "Gallery", href: "#gallery" },
+    { label: "Home", href: "/" },
+    { label: "Mission", href: "/mission" },
+    { label: "Vision", href: "/vision" },
+    { label: "Pillars", href: "/pillars" },
+    { label: "Values", href: "/values" },
+    { label: "Team", href: "/team" },
+    { label: "Activities", href: "/activities" },
+    { label: "Gallery", href: "/gallery" },
   ];
 
   return (
@@ -42,30 +42,30 @@ const Navbar = () => {
 
         <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="text-black hover:text-[#0064A2] transition-colors text-sm font-medium"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="hidden lg:flex items-center gap-3">
-          <a
-            href="#join"
+          <Link
+            href="/join"
             className="px-5 py-2 border-2 border-[#0064A2] text-[#0064A2] rounded-full text-sm font-medium hover:bg-[#0064A2] hover:text-white transition-colors"
           >
             Join Us
-          </a>
-          <a
-            href="#donate"
+          </Link>
+          <Link
+            href="/donate"
             className="px-5 py-2 bg-[#0064A2] text-white rounded-full text-sm font-medium hover:bg-[#0064A2]/90 transition-colors flex items-center gap-2"
           >
             <Heart className="h-4 w-4" />
             Donate
-          </a>
+          </Link>
         </div>
 
         <button
@@ -81,22 +81,22 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="lg:hidden bg-white border-t px-4 py-4 space-y-3">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="block text-black hover:text-[#0064A2] text-sm font-medium py-1"
               onClick={() => setIsMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <div className="flex gap-3 pt-3 border-t">
-            <a href="#join" className="px-4 py-2 border-2 border-[#0064A2] text-[#0064A2] rounded-full text-sm font-medium">
+            <Link href="/join" className="px-4 py-2 border-2 border-[#0064A2] text-[#0064A2] rounded-full text-sm font-medium">
               Join Us
-            </a>
-            <a href="#donate" className="px-4 py-2 bg-[#0064A2] text-white rounded-full text-sm font-medium flex items-center gap-2">
+            </Link>
+            <Link href="/donate" className="px-4 py-2 bg-[#0064A2] text-white rounded-full text-sm font-medium flex items-center gap-2">
               <Heart className="h-4 w-4" /> Donate
-            </a>
+            </Link>
           </div>
         </div>
       )}

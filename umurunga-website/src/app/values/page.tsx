@@ -1,8 +1,13 @@
-// Values Page
+sett// Values Page
 // Shows the 4 core values of Umurunga Family.
 
 import { Heart, Users, Handshake, Shield } from "lucide-react";
 import UmurungaLayout from "@/umurunga/components/UmurungaLayout";
+
+export const metadata = {
+  title: "Our Values"
+};
+
 
 const ValuesPage = () => {
   //  Values data (easy to add/edit values here) 
@@ -62,12 +67,18 @@ const ValuesPage = () => {
           {/*  Living Our Values Banner */}
           <div className="max-w-3xl mx-auto bg-[#0064A2]/5 rounded-xl p-8 text-center">
             <h3 className="text-xl font-bold text-[#0064A2] mb-3">Living Our Values</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">
+            <p className="text-gray-600 text-sm leading-relaxed mb-6">
               These values aren't just words on a page—they guide our daily work,
               decisions, and interactions with the communities we serve. Every member
               of Umurunga Family is committed to embodying these principles in all
               that we do.
             </p>
+            <a
+              href="/team"
+              className="inline-flex items-center gap-2 px-8 py-3 bg-[#0064A2] text-white rounded-full font-medium hover:bg-[#0064A2]/90 transition-colors"
+            >
+              Meet Our Team →
+            </a>
           </div>
         </div>
       </section>

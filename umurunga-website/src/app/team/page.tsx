@@ -1,18 +1,20 @@
 // Team Page
-// Shows all team members in a grid.
-// Add new members to the "teamMembers" array below.
+// Shows all 14 team members in a grid.
 
 import { ArrowRight } from "lucide-react";
 import UmurungaLayout from "@/umurunga/components/UmurungaLayout";
 
+export const metadata = {
+  title: "Our Team"
+};
+
+
 const TeamPage = () => {
-  // Team members data 
-  // To add a new member, just add an object with name, role, and image
   const teamMembers = [
-    { name: "Niyibizi Irene", role: "Executive Director", image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=300&fit=crop" },
-    { name: "Cyiza S Guillaine", role: "Deputy Executive Director", image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" },
-    { name: "Mugisha Godfrey", role: "Head of Social Welfare & Development", image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" },
-    { name: "Amani Esther", role: "Deputy Head of Social Welfare & Development", image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" },
+    { name: "Niyibizi Irene", role: "Executive Director", image: "/images/team1_Irene.jpg" },
+    { name: "Cyiza S Guillaine", role: "Deputy Executive Director", image: "/images/team2_guillaine.png" },
+    { name: "Mugisha Godfrey", role: "Head of Social Welfare & Development", image: "/images/team3_Godfrey.png" },
+    { name: "Amani Esther", role: "Deputy Head of Social Welfare & Development", image: "/images/team4_Amani.png" },
     { name: "Uwineza Brigitte", role: "Secretary", image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop" },
     { name: "Niyozo Annie", role: "Assistant Secretary", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop" },
     { name: "Umutesiwase Liliane", role: "Accountant", image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=300&fit=crop" },
@@ -21,13 +23,14 @@ const TeamPage = () => {
     { name: "Byiringiro Mike", role: "Family Disciplinary", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" },
     { name: "Imena G Carmella", role: "Assistant Disciplinary", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop" },
     { name: "Ishinwe Yves", role: "Family Activities Supervisor", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" },
+    { name: "Uwimana Claire", role: "Community Outreach Coordinator", image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&h=300&fit=crop" },
+    { name: "Habimana Patrick", role: "Youth Programs Officer", image: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=300&h=300&fit=crop" },
   ];
 
   return (
     <UmurungaLayout>
       <section className="py-16">
         <div className="container mx-auto px-4">
-          {/*  Page Title  */}
           <h1 className="text-3xl md:text-4xl font-bold text-[#0064A2] text-center mb-4">
             Meet Our Leadership Team
           </h1>
@@ -36,15 +39,14 @@ const TeamPage = () => {
             Family's mission.
           </p>
 
-          {/*  Team Grid*/}
-          <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+          {/* Team Grid - 14 members */}
+          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             {teamMembers.map((member, i) => (
               <div key={i} className="text-center">
-                {/* Member photo */}
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-32 h-32 mx-auto rounded-full object-cover border-4 border-[#0064A2]/20 mb-3"
+                  className="w-28 h-28 mx-auto rounded-full object-cover border-4 border-[#0064A2]/20 mb-3"
                 />
                 <h3 className="font-bold text-sm text-black">{member.name}</h3>
                 <p className="text-xs text-[#0064A2]">{member.role}</p>
@@ -52,14 +54,14 @@ const TeamPage = () => {
             ))}
           </div>
 
-          {/*  Join CTA Banner  */}
+          {/* Join CTA Banner */}
           <div className="max-w-3xl mx-auto bg-[#0064A2] rounded-xl p-8 text-center text-white">
             <h3 className="text-xl font-bold mb-2">Join Our Team</h3>
             <p className="text-white/80 mb-4 text-sm">
               We're always looking for passionate individuals to help us make a difference.
             </p>
             <a
-              href="#join"
+              href="/join"
               className="inline-flex items-center gap-2 px-6 py-2 bg-white text-[#0064A2] rounded-full font-medium hover:bg-gray-100 transition-colors text-sm"
             >
               Join Us <ArrowRight className="h-4 w-4" />

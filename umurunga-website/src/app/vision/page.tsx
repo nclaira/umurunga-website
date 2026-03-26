@@ -5,6 +5,11 @@
 import { Eye, Star, Rocket } from "lucide-react";
 import UmurungaLayout from "@/umurunga/components/UmurungaLayout";
 
+export const metadata = {
+  title: "Our Vision"
+};
+
+
 const VisionPage = () => {
   // Goals by year (easy to update) 
   const goals2025 = [
@@ -80,7 +85,7 @@ const VisionPage = () => {
               Your support can help us build a brighter future for Rwanda's youth
             </p>
             <a
-              href="/umurunga/donate"
+              href="/donate"
               className="inline-flex items-center gap-2 px-6 py-2 bg-white text-[#0064A2] rounded-full font-medium hover:bg-gray-100 transition-colors"
             >
               Support Our Vision <Rocket className="h-4 w-4" />

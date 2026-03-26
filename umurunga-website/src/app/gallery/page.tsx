@@ -6,6 +6,12 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import UmurungaLayout from "@/umurunga/components/UmurungaLayout";
 
+
+export const metadata = {
+  title: "Gallery"
+};
+
+
 const GalleryPage = () => {
   //  Gallery data 
   // ADD NEW EVENTS HERE: add an object with a label and array of image URLs
