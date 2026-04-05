@@ -1,7 +1,7 @@
-// Mission & Vision Component
-// Displays two cards side by side showing the organization's mission and vision.
+// Mission & Vision Component — homepage cards
 
-import { Target, Eye } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBullseye, faEye } from "@fortawesome/free-solid-svg-icons";
 
 const MissionVision = () => {
   return (
@@ -9,10 +9,10 @@ const MissionVision = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
 
-          {/* ---- Mission Card ---- */}
+          {/* Mission Card */}
           <div className="bg-white rounded-xl shadow-md p-8 text-center">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-[#0064A2]/10 flex items-center justify-center">
-              <Target className="h-6 w-6 text-[#0064A2]" />
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#0064A2]/10 flex items-center justify-center">
+              <FontAwesomeIcon icon={faBullseye} className="w-8 h-8" style={{ color: "#0064A2" }} />
             </div>
             <h3 className="text-xl font-bold text-[#0064A2] mb-3">Our Mission</h3>
             <p className="text-gray-600 leading-relaxed">
@@ -22,10 +22,10 @@ const MissionVision = () => {
             </p>
           </div>
 
-          {/* ---- Vision Card ---- */}
+          {/* Vision Card */}
           <div id="vision" className="bg-white rounded-xl shadow-md p-8 text-center">
-            <div className="w-12 h-12 mx-auto mb-4 rounded-full bg-[#0DB14B]/10 flex items-center justify-center">
-              <Eye className="h-6 w-6 text-[#0DB14B]" />
+            <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-[#0064A2]/10 flex items-center justify-center">
+              <FontAwesomeIcon icon={faEye} className="w-8 h-8" style={{ color: "#0064A2" }} />
             </div>
             <h3 className="text-xl font-bold text-[#0064A2] mb-3">Our Vision</h3>
             <p className="text-gray-600 leading-relaxed">

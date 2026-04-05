@@ -42,20 +42,20 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
           {teamMembers.map((member) => (
-            <div key={member.name} className="text-center">
-              <div className="relative w-36 h-36 mx-auto mb-3 rounded-lg overflow-hidden border-2 border-gray-200">
+            <div key={member.name} className="text-center transition-transform duration-300 hover:-translate-y-2 shadow-xl hover:shadow-md pb-4">
+              <div className="relative w-52 h-52 mx-auto mb-3 overflow-hidden rounded-3xl border-gray-200">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
                   sizes="(max-width: 768px) 50vw, 144px"
-                  className="object-cover"
+                  // className="object-cover"
                 />
               </div>
-              <h4 className="font-bold text-black text-sm">{member.name}</h4>
-              <p className="text-[#0064A2] text-xs">{member.role}</p>
+              <h4 className="font-bold text-black text-md">{member.name}</h4>
+              <p className="text-[#0064A2] text-sm">{member.role}</p>
             </div>
           ))}
         </div>

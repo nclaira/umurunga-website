@@ -1,7 +1,7 @@
 // Donation Call-to-Action Component
-// A blue banner encouraging visitors to donate.
 
-import { Heart } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 const DonationCTA = () => {
   return (
@@ -15,10 +15,11 @@ const DonationCTA = () => {
           Every contribution makes an impact.
         </p>
         <a
-          href="#donate"
-          className="inline-flex items-center gap-2 px-8 py-3 bg-white text-[#0064A2] rounded-full text-lg font-medium hover:bg-gray-100 transition-colors"
+          href="/donate"
+          className="inline-flex items-center gap-2 px-8 py-3 bg-white text-[#0064A2] rounded-full text-lg font-bold hover:bg-gray-100 transition-colors"
         >
-          Donate Now <Heart className="h-5 w-5" />
+          Donate Now
+          <FontAwesomeIcon icon={faHeart} className="w-5 h-5" style={{ color: "#0064A2" }} />
         </a>
       </div>
     </section>

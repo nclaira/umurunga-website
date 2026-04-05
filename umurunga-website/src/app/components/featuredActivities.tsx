@@ -70,15 +70,15 @@ const FeaturedActivities = () => {
 
               {/* Activity Content */}
               <div className="p-5">
-                <h3 className="font-bold text-black text-sm mb-2 leading-snug">
+                <h3 className="font-bold text-black text-lg mb-2 leading-snug">
                   {activity.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+                <p className="text-gray-600 text-md mb-4 leading-relaxed">
                   {activity.description}
                 </p>
                 <a
-                  href="#"
-                  className="text-[#0064A2] text-sm font-medium hover:underline flex items-center gap-1"
+                  href="/activities"
+                  className="text-[#0064A2] text-md font-medium hover:underline flex items-center gap-1"
                 >
                   Learn more <ArrowRight className="h-3 w-3" />
                 </a>

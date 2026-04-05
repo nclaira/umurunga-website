@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-white sticky top-0 z-50 shadow-sm">
+    <header className="bg-white sticky top-0 z-50 shadow-md pb-2">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 min-w-0 shrink">
           <Image
@@ -45,7 +45,7 @@ const Navbar = () => {
             <Link
               key={link.label}
               href={link.href}
-              className="text-black hover:text-[#0064A2] transition-colors text-sm font-medium"
+              className="text-sky-700 hover:text-[#0DB14B] hover:underline transition-colors text-md font-medium"
             >
               {link.label}
             </Link>
@@ -55,18 +55,18 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-3">
           <Link
             href="/join"
-            className="px-5 py-2 border-2 border-[#0064A2] text-[#0064A2] rounded-full text-sm font-medium hover:bg-[#0064A2] hover:text-white transition-colors"
+            className="px-5 py-2 border-2 border-[#0064A2] text-[#0064A2] rounded-full text-sm font-semibold hover:bg-[#0064A2] hover:text-white transition-colors"
           >
             Join Us
           </Link>
           <Link
             href="/donate"
-            className="px-5 py-2 bg-[#0064A2] text-white rounded-full text-sm font-medium hover:bg-[#0064A2]/90 transition-colors flex items-center gap-2"
+            className="px-5 py-2 bg-[#0064A2] text-white rounded-full text-md font-medium hover:bg-[#0064A2]/90 transition-colors flex items-center gap-2"
           >
-            <Heart className="h-4 w-4" />
+            <Heart className="h-4 w-4 fill-white text-white" />
             Donate
           </Link>
-        </div>
+            </div>
 
         <button
           type="button"

@@ -41,7 +41,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-[600px] md:h-[700px] overflow-hidden">
+    <section id="home" className="relative h-[100svh] min-h-[500px] md:h-[700px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.image}
@@ -62,14 +62,14 @@ const Hero = () => {
       ))}
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3 md:mb-4 px-2">
           {slides[currentSlide].title}
         </h1>
-        <p className="text-lg md:text-xl max-w-2xl mb-8 text-white/90">
+        <p className="text-base sm:text-lg md:text-xl max-w-2xl mb-6 md:mb-8 text-white/90 px-2">
           {slides[currentSlide].description}
         </p>
         <a
-          href="#join"
+          href="join"
           className="px-8 py-3 bg-[#0064A2] text-white rounded-full text-lg font-medium hover:bg-[#0064A2]/90 transition-colors flex items-center gap-2"
         >
           Join Us <ArrowRight className="h-5 w-5" />

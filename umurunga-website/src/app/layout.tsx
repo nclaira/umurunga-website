@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -17,8 +18,11 @@ export const metadata: Metadata = {
     default: "Umurunga Family",
     template: "%s | Umurunga Family"
   },
-
   description: "Umurunga Family is an inclusive organization in Rwanda dedicated to sustainable peace, youth empowerment, and fighting discrimination through unconditional love and community collaboration.",
+  icons: {
+    icon: "/images/umurunga-logo.png",
+    apple: "/images/umurunga-logo.png",
+  },
 };
 
 export default function RootLayout({

@@ -1,3 +1,5 @@
+"use client";
+
 // Gallery Page
 // Displays photos in a grid with a dropdown to filter by event.
 // Add new events and photos to the "galleryEvents" array below.
@@ -6,10 +8,6 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import UmurungaLayout from "@/umurunga/components/UmurungaLayout";
 
-
-export const metadata = {
-  title: "Gallery"
-};
 
 
 const GalleryPage = () => {

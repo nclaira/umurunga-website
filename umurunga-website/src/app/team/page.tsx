@@ -15,16 +15,15 @@ const TeamPage = () => {
     { name: "Cyiza S Guillaine", role: "Deputy Executive Director", image: "/images/team2_guillaine.png" },
     { name: "Mugisha Godfrey", role: "Head of Social Welfare & Development", image: "/images/team3_Godfrey.png" },
     { name: "Amani Esther", role: "Deputy Head of Social Welfare & Development", image: "/images/team4_Amani.png" },
-    { name: "Uwineza Brigitte", role: "Secretary", image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&h=300&fit=crop" },
-    { name: "Niyozo Annie", role: "Assistant Secretary", image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop" },
-    { name: "Umutesiwase Liliane", role: "Accountant", image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=300&fit=crop" },
-    { name: "Dushime Alfiane", role: "Assistant Accountant", image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" },
-    { name: "Hirwa Djasil", role: "Permanent Advisor in Family Development", image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" },
-    { name: "Byiringiro Mike", role: "Family Disciplinary", image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" },
-    { name: "Imena G Carmella", role: "Assistant Disciplinary", image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop" },
-    { name: "Ishinwe Yves", role: "Family Activities Supervisor", image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=300&h=300&fit=crop" },
-    { name: "Uwimana Claire", role: "Community Outreach Coordinator", image: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=300&h=300&fit=crop" },
-    { name: "Habimana Patrick", role: "Youth Programs Officer", image: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=300&h=300&fit=crop" },
+    { name: "Uwineza Brigitte", role: "Secretary", image: "/images/team5_Brigitte.png" },
+    { name: "Niyozo Annie", role: "Assistant Secretary", image: "/images/team6_Arnie.png" },
+    { name: "Umutesiwase Liliane", role: "Accountant", image: "/images/team7_Liliane.png" },
+    { name: "Dushime Alfiane", role: "Assistant Accountant", image: "/images/team8_Alliane.png" },
+    { name: "Hirwa Djasil", role: "Permanent Advisor in Family Development", image: "/images/team9_Hirwa.png" },
+    { name: "Byiringiro Mike", role: "Family Disciplinary", image: "/images/team10_Mike.jpg" },
+    { name: "Imena G Carmella", role: "Assistant Disciplinary", image: "/images/team11_Gabriella.jpg" },
+    { name: "Ishinwe Yves", role: "Family Activities Supervisor", image: "/images/team12_Yves.png" },
+   
   ];
 
   return (
@@ -40,31 +39,31 @@ const TeamPage = () => {
           </p>
 
           {/* Team Grid - 14 members */}
-          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+          <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
             {teamMembers.map((member, i) => (
-              <div key={i} className="text-center">
+              <div key={i} className="text-center  transition-transform duration-300 hover:-translate-y-2 shadow-xl hover:shadow-md rounded-xl pb-6">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-28 h-28 mx-auto rounded-full object-cover border-4 border-[#0064A2]/20 mb-3"
+                  className="w-58 h-58 mx-auto mx-auto rounded-3xl object-cover border-[#0064A2]/20 mb-3"
                 />
-                <h3 className="font-bold text-sm text-black">{member.name}</h3>
-                <p className="text-xs text-[#0064A2]">{member.role}</p>
+                <h3 className="font-bold text-md text-black">{member.name}</h3>
+                <p className="text-sm text-[#0064A2]">{member.role}</p> 
               </div>
             ))}
           </div>
 
           {/* Join CTA Banner */}
-          <div className="max-w-3xl mx-auto bg-[#0064A2] rounded-xl p-8 text-center text-white">
+          <div className="max-w-5xl mx-auto bg-[#0064A2] rounded-xl p-12 text-center text-white">
             <h3 className="text-xl font-bold mb-2">Join Our Team</h3>
-            <p className="text-white/80 mb-4 text-sm">
+            <p className="text-white/80 mb-4 text-md">
               We're always looking for passionate individuals to help us make a difference.
             </p>
             <a
               href="/join"
               className="inline-flex items-center gap-2 px-6 py-2 bg-white text-[#0064A2] rounded-full font-medium hover:bg-gray-100 transition-colors text-sm"
             >
-              Join Us <ArrowRight className="h-4 w-4" />
+              Join Us <ArrowRight className="h-8 w-8" />
             </a>
           </div>
         </div>
