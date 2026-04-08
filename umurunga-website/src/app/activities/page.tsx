@@ -40,9 +40,9 @@ const activities = [
 ];
 
 const categoryColors: Record<string, string> = {
-  "Community Outreach": "bg-blue-100 text-blue-700",
-  "Trauma Support":     "bg-purple-100 text-purple-700",
-  "Health & Welfare":   "bg-green-100 text-green-700",
+  "Community Outreach": "bg-blue-100 text-[#0DB14B]",
+  "Trauma Support":     "bg-blue-100 text-[#0DB14B]",
+  "Health & Welfare":   "bg-blue-100 text-[#0DB14B]",
 };
 
 const ActivitiesPage = () => {
@@ -97,7 +97,7 @@ const ActivitiesPage = () => {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                   {/* Category badge */}
-                  <span className={`absolute top-3 left-3 text-xs font-semibold px-3 py-1 rounded-full ${categoryColors[activity.category]}`}>
+                  <span className={`absolute top-3 left-3 font-semibold px-3 py-1 text-ts rounded-full ${categoryColors[activity.category]}`}>
                     {activity.category}
                   </span>
                 </div>
@@ -105,7 +105,7 @@ const ActivitiesPage = () => {
                 {/* Content */}
                 <div className="p-6">
                   {/* Date */}
-                  <div className="flex items-center gap-2 text-[#0DB14B] text-xs mb-3">
+                  <div className="flex items-center gap-2 text-[#0DB14B] text-sm mb-3">
                     <FontAwesomeIcon icon={faCalendarAlt} className="w-3 h-3" />
                     <span>{activity.date}</span>
                   </div>

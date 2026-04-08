@@ -41,7 +41,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-[100svh] min-h-[500px] md:h-[700px] overflow-hidden">
+    <section id="home" className="relative h-[590px] h-[100svh] min-h-[500px] md:h-400px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.image}
@@ -70,7 +70,7 @@ const Hero = () => {
         </p>
         <a
           href="join"
-          className="px-8 py-3 bg-[#0064A2] text-white rounded-full text-lg font-medium hover:bg-[#0064A2]/90 transition-colors flex items-center gap-2"
+          className="px-8 py-3 bg-[#0064A2] text-white rounded-full text-lg font-medium hover:bg-[#0064A2]/70 transition-colors flex items-center gap-2"
         >
           Join Us <ArrowRight className="h-5 w-5" />
         </a>

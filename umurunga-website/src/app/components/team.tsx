@@ -36,21 +36,21 @@ const Team = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#0064A2] mb-3">
             Meet Our Team
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-3xl text-xl mx-auto">
             Dedicated individuals working tirelessly to make Umurunga Family&apos;s
             mission a reality.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-38 max-w-5xl mx-auto">
           {teamMembers.map((member) => (
             <div key={member.name} className="text-center transition-transform duration-300 hover:-translate-y-2 shadow-xl hover:shadow-md pb-4">
-              <div className="relative w-52 h-52 mx-auto mb-3 overflow-hidden rounded-3xl border-gray-200">
-                <Image
+              <div className="relative w-64 h-64 mx-auto mb-3 overflow-hidden rounded-3xl border-gray-200 p-12">
+                <Image 
                   src={member.image}
                   alt={member.name}
                   fill
-                  sizes="(max-width: 768px) 50vw, 144px"
+                  sizes="(max-width: 768px) 50vw, 256px"
                   // className="object-cover"
                 />
               </div>

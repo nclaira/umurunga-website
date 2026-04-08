@@ -36,7 +36,7 @@ const Pillars = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {pillars.map((pillar, index) => (
             <div
               key={index}
@@ -49,8 +49,8 @@ const Pillars = () => {
                   style={{ color: "#0064A2" }}
                 />
               </div>
-              <h3 className="font-bold text-black text-lg mb-2">{pillar.title}</h3>
-              <p className="text-gray-600 text-md leading-relaxed">{pillar.description}</p>
+              <h3 className="font-bold text-black text-xl mb-2">{pillar.title}</h3>
+              <p className="text-gray-600 text-lg leading-relaxed">{pillar.description}</p>
             </div>
           ))}
         </div>
