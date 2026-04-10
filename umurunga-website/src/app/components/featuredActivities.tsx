@@ -56,27 +56,30 @@ const activities = [
   ];
 
 const categoryColors: Record<string, string> = {
-  "Community Outreach": "bg-white/90 text-[#0DB14B]",
-  "Trauma Support": "bg-white/90 text-[#0DB14B]",
-  "Health & Welfare": "bg-white/90 text-[#0DB14B]",
+  "Community Outreach": "bg-white/50 text-[#0DB14B]",
+  "Trauma Support": "bg-white/50 text-[#0DB14B]",
+  "Health & Welfare": "bg-white/50 text-[#0DB14B]",
 };
 
 const FeaturedActivities = () => {
   const sectionRef = useRef<HTMLElement | null>(null);
-  const [started, setStarted] = useState(false);
+  // animKey increments every time section enters view — triggers re-animation
+  const [animKey, setAnimKey] = useState(0);
   const [counts, setCounts] = useState<number[]>(() => stats.map(() => 0));
   const durations = useMemo(() => stats.map((_, index) => 1400 + index * 200), []);
 
+  // Watch for section entering AND leaving viewport — reset each time it enters
   useEffect(() => {
     const element = sectionRef.current;
-    if (!element || started) return;
+    if (!element) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         const [entry] = entries;
         if (entry.isIntersecting) {
-          setStarted(true);
-          observer.disconnect();
+          // Reset counts to 0 then trigger new animation
+          setCounts(stats.map(() => 0));
+          setAnimKey((k) => k + 1);
         }
       },
       { threshold: 0.35 }
@@ -84,10 +87,11 @@ const FeaturedActivities = () => {
 
     observer.observe(element);
     return () => observer.disconnect();
-  }, [started]);
+  }, []);
 
+  // Re-run animation every time animKey changes
   useEffect(() => {
-    if (!started) return;
+    if (animKey === 0) return;
 
     const delayMs = 400;
     const startAt = performance.now() + delayMs;
@@ -120,7 +124,7 @@ const FeaturedActivities = () => {
 
     rafId = window.requestAnimationFrame(animate);
     return () => window.cancelAnimationFrame(rafId);
-  }, [durations, started]);
+  }, [animKey, durations]);
 
   return (
     <section id="activities" className="py-16" ref={sectionRef}>
@@ -176,7 +180,7 @@ const FeaturedActivities = () => {
                   className="w-full h-48 object-cover"
                 />
                 <span
-                  className={`absolute top-3 left-3 text-sm font-semibold px-4 py-2 rounded-full ${categoryColors[activity.category]}`}
+                  className={`absolute top-1 left-3 text-sm font-semibold px-4 rounded-full ${categoryColors[activity.category]}`}
                 >
                   {activity.category}
                 </span>

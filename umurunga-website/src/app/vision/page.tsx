@@ -73,7 +73,7 @@ const VisionPage = () => {
                 </div>
                 <ul className="p-6 space-y-4">
                   {goals2025.map((goal, i) => (
-                    <li key={i} className="flex items-start gap-3 text-gray-700 text-sm">
+                    <li key={i} className="flex items-start gap-3 text-gray-700 text-md">
                       <FontAwesomeIcon icon={faCheckCircle} className="w-5 h-5 shrink-0 mt-0.5" style={{ color: "#0064A2" }} />
                       <span>{goal}</span>
                     </li>
@@ -86,7 +86,7 @@ const VisionPage = () => {
                 </div>
                 <ul className="p-6 space-y-4">
                   {goals2030.map((goal, i) => (
-                    <li key={i} className="flex items-start gap-3 text-gray-700 text-sm">
+                    <li key={i} className="flex items-start gap-3 text-gray-700 text-md">
                       <FontAwesomeIcon icon={faCheckCircle} className="w-5 h-5 shrink-0 mt-0.5" style={{ color: "#0DB14B" }} />
                       <span>{goal}</span>
                     </li>
@@ -99,7 +99,7 @@ const VisionPage = () => {
           {/* ── CTA Banner ── */}
           <div className="max-w-2xl mx-auto bg-gradient-to-r from-[#0064A2] to-[#00a896] rounded-2xl p-10 text-center text-white shadow-lg">
             <h3 className="text-2xl font-bold mb-3">Join Us in Realizing This Vision</h3>
-            <p className="text-white/80 mb-6 text-sm">
+            <p className="text-white/80 mb-6 text-md">
               Your support can help us build a brighter future for Rwanda's youth.
             </p>
             <a

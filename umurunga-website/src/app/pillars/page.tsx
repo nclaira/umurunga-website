@@ -100,11 +100,11 @@ const PillarsPage = () => {
                     <FontAwesomeIcon icon={pillar.icon} className="w-6 h-6" style={{ color: "#0064A2" }} />
                   </div>
                   <h3 className="text-lg font-bold text-[#0064A2] mb-3">{pillar.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed mb-5">{pillar.description}</p>
+                  <p className="text-gray-500 text-md leading-relaxed mb-5">{pillar.description}</p>
                   <div className="border-t border-gray-100 mb-4" />
                   <ul className="space-y-2 mt-auto">
                     {pillar.programs.map((program, j) => (
-                      <li key={j} className="flex items-start gap-2 text-sm text-gray-700">
+                      <li key={j} className="flex items-start gap-2 text-md text-gray-700">
                         <FontAwesomeIcon icon={faCheck} className="w-3.5 h-3.5 shrink-0 mt-0.5" style={{ color: "#0DB14B" }} />
                         <span>{program}</span>
                       </li>
@@ -118,7 +118,7 @@ const PillarsPage = () => {
           {/* ── CTA ── */}
           <div className="max-w-2xl mx-auto bg-[#1a2332] rounded-2xl p-10 text-center text-white shadow-lg">
             <h3 className="text-2xl font-bold mb-3">See These Pillars in Action</h3>
-            <p className="text-white/60 mb-6 text-sm">
+            <p className="text-white/60 mb-6 text-md">
               Discover how we bring each pillar to life through our real programs and activities.
             </p>
             <a

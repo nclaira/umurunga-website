@@ -82,7 +82,7 @@ const ValuesPage = () => {
                   {value.title}
                 </h3>
                 <div className="w-8 h-0.5 rounded-full mb-4" style={{ backgroundColor: value.accent }} />
-                <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
+                <p className="text-gray-600 text-md leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
@@ -93,7 +93,7 @@ const ValuesPage = () => {
               <div className="h-1.5 bg-gradient-to-r from-[#0DB14B] to-[#0064A2]" />
               <div className="p-8 md:p-10 text-center">
                 <h3 className="text-2xl font-bold text-[#0064A2] mb-4">Living Our Values</h3>
-                <p className="text-gray-600 text-sm leading-relaxed mb-8 max-w-xl mx-auto">
+                <p className="text-gray-600 text-md leading-relaxed mb-8 max-w-xl mx-auto">
                   These values aren't just words on a page—they guide our daily work,
                   decisions, and interactions with the communities we serve. Every member
                   of Umurunga Family is committed to embodying these principles in all

@@ -40,9 +40,9 @@ const activities = [
 ];
 
 const categoryColors: Record<string, string> = {
-  "Community Outreach": "bg-blue-100 text-[#0DB14B]",
-  "Trauma Support":     "bg-blue-100 text-[#0DB14B]",
-  "Health & Welfare":   "bg-blue-100 text-[#0DB14B]",
+  "Community Outreach": "bg-white/50 text-[#0DB14B]",
+  "Trauma Support":     "bg-white/50 text-[#0DB14B]",
+  "Health & Welfare":   "bg-white/50 text-[#0DB14B]",
 };
 
 const ActivitiesPage = () => {
@@ -97,7 +97,7 @@ const ActivitiesPage = () => {
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
                   {/* Category badge */}
-                  <span className={`absolute top-3 left-3 font-semibold px-3 py-1 text-ts rounded-full ${categoryColors[activity.category]}`}>
+                  <span className={`absolute top-1 left-3 font-semibold px-3 text-ts rounded-full ${categoryColors[activity.category]}`}>
                     {activity.category}
                   </span>
                 </div>

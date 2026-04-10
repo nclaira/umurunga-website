@@ -68,7 +68,7 @@ const MissionPage = () => {
                   <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-[#0064A2]/10 flex items-center justify-center">
                     <FontAwesomeIcon icon={item.icon} className="w-6 h-6" style={{ color: "#0064A2" }} />
                   </div>
-                  <p className="text-gray-700 text-sm leading-relaxed">{item.text}</p>
+                  <p className="text-gray-700 text-lg leading-relaxed">{item.text}</p>
                 </div>
               ))}
             </div>
@@ -89,7 +89,7 @@ const MissionPage = () => {
                   <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-[#0064A2]/10 group-hover:bg-[#0064A2] flex items-center justify-center transition-colors duration-300">
                     <FontAwesomeIcon icon={item.icon} className="w-6 h-6 group-hover:text-white transition-colors duration-300" style={{ color: "#0064A2" }} />
                   </div>
-                  <p className="text-gray-700 text-sm font-medium leading-relaxed">{item.text}</p>
+                  <p className="text-gray-700 text-lg font-medium leading-relaxed">{item.text}</p>
                 </div>
               ))}
             </div>
@@ -98,7 +98,7 @@ const MissionPage = () => {
           {/* ── CTA ── */}
           <div className="max-w-2xl mx-auto bg-[#0064A2] rounded-2xl p-10 text-center text-white shadow-lg">
             <h3 className="text-2xl font-bold mb-3">See Our Work in Action</h3>
-            <p className="text-white/80 mb-6 text-sm">
+            <p className="text-white/80 mb-6 text-md">
               Explore the real activities and programs we run across Rwanda.
             </p>
             <a
