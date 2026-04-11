@@ -28,6 +28,24 @@ const activities = [
     image: "/images/activity2_genoSurvivor.jpg",
     impact: "Healing & reconciliation",
   },
+
+  // I will edit thie below for new activity
+
+//  {
+//     date: "25 June 2025",
+//     category: "Trauma Support",
+//     title: "Umurunga Family Visited Genocide Survivor from Musanze",
+//     description:
+//       "We visited a genocide survivor in Musanze, offering emotional support and sharing a moment of healing and togetherness. Our team provided counseling resources and a listening ear to help in the journey of recovery and resilience.",
+//     image: "/images/activity2_genoSurvivor.jpg",
+//     impact: "Healing & reconciliation",
+//   },
+
+
+
+// New activites will be added here , i will  create new object as above then 
+// i put date, category,title, descriptii,...,impact
+
   {
     date: "26 July 2025",
     category: "Health & Welfare",

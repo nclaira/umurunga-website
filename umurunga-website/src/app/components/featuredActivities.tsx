@@ -44,6 +44,19 @@ const activities = [
     description:
       "To promote better health and security, we proudly covered health insurance for 20 families, ensuring they have access to medical care.",
   },
+
+
+  // I will edit this below the on home featured activites it will be there
+
+  // {
+  //   category: "Health & Welfare",
+  //   title: "26 July 2025: Umurunga Family visited patient in CHUK",
+  //   image: "/images/activity3_insurance.png",
+  //   description:
+  //     "To promote better health and security, we proudly covered health insurance for 20 families, ensuring they have access to medical care.",
+  // },
+
+
   
     // TO ADD MORE ACTIVITIES: Copy the object below,
   // paste it here, and fill in your details:

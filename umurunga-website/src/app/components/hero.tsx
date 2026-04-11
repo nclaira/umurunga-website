@@ -17,13 +17,13 @@ const slides = [
     image: siteMedia.heroSlides[0],
   },
   {
-    title: "Youth Trauma Support",
+    title: "Combating Youth Trauma",
     description:
       "Helping youth overcome trauma and find resilience through counseling and community support.",
     image: siteMedia.heroSlides[1],
   },
   {
-    title: "Fighting Discrimination",
+    title: "Youth Empowerment",
     description:
       "Promoting equality and love without bias through education and advocacy programs.",
     image: siteMedia.heroSlides[2],

@@ -101,7 +101,28 @@ const GalleryPage = () => {
         "/images/insurance-7.jpg",
       ],
     },
+
+
+    //edit this for new label of pictures
+
+    //  {
+    //   label: "26 July 2025: Paid Health insurance for 20 families",
+    //   photos: [
+    //     "/images/insurance-1.jpg",
+    //     "/images/insurance-2.jpg",
+    //     "/images/insurance-3.jpg",
+    //     "/images/insurance-4.jpg",
+    //     "/images/insurance-5.jpg",
+    //     "/images/insurance-6.jpg",
+    //     "/images/insurance-7.jpg",
+    //   ],
+    // },
+
   ];
+
+
+  //New gallery events will be added here,
+  // i will create new label and add new photos
 
   // State: which event is selected (default = first one)
   const [selectedEvent, setSelectedEvent] = useState(0);
