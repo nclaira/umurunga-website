@@ -18,7 +18,7 @@ const DonatePage = () => {
         <div className="container mx-auto px-4">
           {/* Page Title */}
           <h1 className="text-3xl md:text-4xl font-bold text-[#0064A2] text-center mb-4">
-            <Heart className="inline h-8 w-8 text-[#0DB14B] mr-2" />
+            <Heart className="inline h-8 w-8 text-[#0DB14B] mr-2" fill="currentColor" />
             You can now donate Umurunga Family activities
           </h1>
 

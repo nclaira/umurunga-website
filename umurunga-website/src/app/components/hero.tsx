@@ -41,7 +41,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-[590px] h-[100svh] min-h-[500px] md:h-400px] overflow-hidden">
+    <section id="home" className="relative h-[520px] h-[100svh] min-h-[500px] md:h-400px] overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={slide.image}

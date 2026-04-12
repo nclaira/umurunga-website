@@ -29,7 +29,26 @@ const activities = [
     impact: "Healing & reconciliation",
   },
 
-  // I will edit thie below for new activity
+  {
+    date: "26 July 2025",
+    category: "Health & Welfare",
+    title: "Umurunga Family Paid Health Insurance for 20 Families",
+    description:
+      "To promote better health and security, we proudly covered health insurance for 20 families, ensuring they have access to medical care. This program directly supports our pillar of sustainable development and community welfare.",
+    image: "/images/activity3_insurance.png",
+    impact: "families covered",
+  },
+
+ {
+    date: "13 December 2025",
+    category: "Health & Welfare",
+    title: "Support to Patients at CHUK Hospital",
+    description: "Umurunga Family visited patients who were unable to leave the hospital due to unpaid medical bills. The activity aimed to restore hope and support vulnerable patients by covering their hospital expenses.",
+    image: "/images/chuk-1.jpg",
+    impact: "Three patients from different families were able to clear their bills and return home, giving them a second chance to continue their lives with dignity and hope.",
+  },
+
+// I will edit this, for new activity
 
 //  {
 //     date: "25 June 2025",
@@ -46,15 +65,7 @@ const activities = [
 // New activites will be added here , i will  create new object as above then 
 // i put date, category,title, descriptii,...,impact
 
-  {
-    date: "26 July 2025",
-    category: "Health & Welfare",
-    title: "Umurunga Family Paid Health Insurance for 20 Families",
-    description:
-      "To promote better health and security, we proudly covered health insurance for 20 families, ensuring they have access to medical care. This program directly supports our pillar of sustainable development and community welfare.",
-    image: "/images/activity3_insurance.png",
-    impact: "families covered",
-  },
+  
 ];
 
 const categoryColors: Record<string, string> = {

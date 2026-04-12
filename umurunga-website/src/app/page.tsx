@@ -4,6 +4,8 @@
 
 import Navbar from "@/app/components/navbar";
 import Hero from "@/app/components/hero";
+import PendingActivities from "@/app/components/pendingActivities";
+import ActionPlanSection from "@/app/components/actionPlanSection";
 import MissionVision from "@/app/components/missionVision";
 import FeaturedActivities from "@/app/components/featuredActivities";
 import Team from "@/app/components/team";
@@ -19,6 +21,12 @@ const UmurungaHome = () => {
 
       {/* Hero Section - Full screen slider */}
       <Hero />
+
+      {/* Upcoming / pending activities */}
+      <PendingActivities />
+
+      {/* Action Plan — view or download PDF */}
+      <ActionPlanSection />
 
       {/* Mission & Vision Cards */}
       <MissionVision />

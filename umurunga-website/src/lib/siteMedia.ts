@@ -15,4 +15,9 @@ export const siteMedia = {
     "/images/team3_Godfrey.png",
     "/images/team4_Amani.png",
   ] as const,
+  /**
+   * Annual action plan PDF. Add your file as:
+   * `public/documents/umurunga-annual-action-plan.pdf`
+   */
+  actionPlanPdf: "/documents/actionPlan.pdf",
 } as const;

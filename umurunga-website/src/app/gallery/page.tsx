@@ -102,6 +102,18 @@ const GalleryPage = () => {
       ],
     },
 
+    {
+      label: "13 December 2025: Support to Patients at CHUK Hospital",
+      photos: [
+        "/images/chuk-1.jpg",
+        "/images/chuk-2.jpg",
+        "/images/chuk-3.jpg",
+        "/images/chuk-4.jpg",
+        "/images/chuk-5.jpg",
+        "/images/chuk-6.jpg",
+      ],
+    },
+
 
     //edit this for new label of pictures
 

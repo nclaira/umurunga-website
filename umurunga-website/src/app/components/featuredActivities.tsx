@@ -7,7 +7,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 
 type ImpactStat = {
   label: string;
@@ -24,37 +24,39 @@ const stats: ImpactStat[] = [
 // ACTIVITIES DATA - Add new activities here!
 const activities = [
   {
+    date: "24 May 2025",
     category: "Community Outreach",
-    title: "24 May 2025: Umurunga Family with Street Children at Kigali city.",
+    title: "Umurunga Family with Street Children at Kigali city",
     image: "/images/activity1_StreetChildren.jpg",
     description:
       "On this day, we spent quality time with street children in Kigali city, sharing meals, listening to their stories, and giving them hope for a brighter future.",
   },
   {
+    date: "25 June 2025",
     category: "Trauma Support",
-    title: "25 June 2025: Umurunga Family Visited genocide Survivor from Musanze",
+    title: "Umurunga Family Visited genocide Survivor from Musanze",
     image: "/images/activity2_genoSurvivor.jpg",
     description:
       "We visited a genocide survivor in Musanze, offering emotional support and sharing a moment of healing and togetherness.",
   },
   {
+    date: "26 July 2025",
     category: "Health & Welfare",
-    title: "26 July 2025: Umurunga Family paid Health insurance for 20 people families",
+    title: "Umurunga Family paid Health insurance for 20 people families",
     image: "/images/activity3_insurance.png",
     description:
       "To promote better health and security, we proudly covered health insurance for 20 families, ensuring they have access to medical care.",
   },
 
-
   // I will edit this below the on home featured activites it will be there
 
-  // {
-  //   category: "Health & Welfare",
-  //   title: "26 July 2025: Umurunga Family visited patient in CHUK",
-  //   image: "/images/activity3_insurance.png",
-  //   description:
-  //     "To promote better health and security, we proudly covered health insurance for 20 families, ensuring they have access to medical care.",
-  // },
+  {
+    date: "13 December 2025",
+    category: "Health & Welfare",
+    title: "Support to Patients at CHUK Hospital",
+    image: "/images/chuk-1.jpg",
+    description: "Umurunga Family visited patients who were unable to leave the hospital due to unpaid medical bills. The activity aimed to restore hope and support vulnerable patients by covering their hospital expenses.",
+  },
 
 
   
@@ -201,6 +203,11 @@ const FeaturedActivities = () => {
 
               {/* Activity Content */}
               <div className="p-5">
+                {/* Date — same style as activities page */}
+                <div className="flex items-center gap-2 text-[#0DB14B] text-sm mb-3">
+                  <CalendarDays className="h-3.5 w-3.5" />
+                  <span>{activity.date}</span>
+                </div>
                 <h3 className="font-bold text-black text-xl mb-2 leading-snug">
                   {activity.title}
                 </h3>
