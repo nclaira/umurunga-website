@@ -16,8 +16,8 @@ export const siteMedia = {
     "/images/team4_Amani.png",
   ] as const,
   /**
-   * Annual action plan PDF. Add your file as:
-   * `public/documents/umurunga-annual-action-plan.pdf`
+   * Annual action plan PDF. I added my file here:
+   * `public/documents/umurunga-action-plan.pdf`
    */
-  actionPlanPdf: "/documents/actionPlan.pdf",
+  actionPlanPdf: "/documents/umurunga-action-plan.pdf",
 } as const;
