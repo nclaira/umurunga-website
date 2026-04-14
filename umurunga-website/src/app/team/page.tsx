@@ -18,10 +18,10 @@ const TeamPage = () => {
     { name: "Uwineza Brigitte", role: "Secretary", image: "/images/team5_Brigitte.png" },
     { name: "Niyozo Annie", role: "Assistant Secretary", image: "/images/team6_Arnie.png" },
     { name: "Umutesiwase Liliane", role: "Accountant", image: "/images/team7_Liliane.png" },
-    { name: "Dushime Alfiane", role: "Assistant Accountant", image: "/images/team8_Alliane.png" },
-    { name: "Hirwa Djasil", role: "Permanent Advisor in Family Development", image: "/images/team9_Hirwa.png" },
+    { name: "Dushime Alliane", role: "Assistant Accountant", image: "/images/team8_Alliane.png" },
+    { name: "Rene Karangwa", role: "Advisor in Family Development", image: "/images/team9_Rene.jpg" },
     { name: "Byiringiro Mike", role: "Family Disciplinary", image: "/images/team10_Mike.jpg" },
-    { name: "Imena G Carmella", role: "Assistant Disciplinary", image: "/images/team11_Gabriella.jpg" },
+    { name: "Mugisha Gabriella", role: "Assistant Disciplinary", image: "/images/team11_Gabriella.jpg" },
     { name: "Ishinwe Yves", role: "Family Activities Supervisor", image: "/images/team12_Yves.png" },
    
   ];
