@@ -48,6 +48,16 @@ const activities = [
     impact: "Three patients from different families were able to clear their bills and return home, giving them a second chance to continue their lives with dignity and hope.",
   },
 
+
+ {
+    date: "18 July 2026",
+    category: "Health & Welfare",
+    title: "Payment of Community-Based Health Insurance (Mutuelle de Santé)",
+    description:"Paid Mutuelle de Santé (Community-Based Health Insurance) for 8 vulnerable families in Kayonza District, ensuring access to affordable healthcare and reducing financial barriers to medical services.",
+    image: "/images/kayonza_jul_1.jpg",
+    impact: "8 families (20 beneficiaries) received health insurance support.",
+  },
+
 // I will edit this, for new activity
 
 //  {

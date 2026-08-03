@@ -7,13 +7,14 @@ import { siteMedia } from "@/lib/siteMedia";
 
 // ── Pending / upcoming activities — ADD NEW ONES HERE ──
 const pendingActivities = [
-  {
-    day: "20",
-    month: "June 2026",
-    fullDate: "20 June 2026",
-    title: "Repair of Genocide Survivor’s House",
-    description:"This activity aims to support genocide survivors by repairing their houses during the 100 Days of Remembrance in Rwanda. It is part of standing in solidarity with survivors and improving their living conditions.",
-    location: "Kayonza District, Eastern Province, Rwanda",
+   {
+    day: "15",   
+    month: "September 2026",
+    fullDate: "15 September 2025",
+    title: "Payment of School Fees for Vulnerable Children",
+    description:
+      "This activity aims to support vulnerable children by paying their school fees, enabling them to continue their education without financial barriers. Through this initiative, Umurunga Family Organization seeks to promote equal access to education, reduce school dropout rates, and give children the opportunity to build a brighter future.",
+    location: "Nyagatovu Village, Mukarange Sector, Kayonza District",
   },
 
   // {
